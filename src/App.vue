@@ -2,33 +2,39 @@
   <div id="wrapper">
       <header class="tech-header header">
         <div class="container-fluid">
-           <Navbar/>
+           <navbar/>
         </div><!-- end container-fluid -->
       </header><!-- end market-header -->
       <section class="section">
         <div class="container">
           <div class="row">
             <router-view/>
-            <Sidebar/>
+            <sidebar/>
           </div><!-- end row -->
         </div><!-- end container -->
       </section>
-      <Footer/>
-  <div class="dmtop">Scroll to Top</div>         
+      <footerr/>
+  <div v-on:click="scrollTop" class="dmtop">Scroll to Top</div>         
   </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
-import Sidebar from '@/components/Sidebar.vue'
-import Footer from '@/components/Footer.vue'
+import navbar from '@/components/navbar'
+import sidebar from '@/components/sidebar'
+import footerr from '@/components/footer'
 
 export default {
   components: {
-    Navbar,
-    Sidebar,
-    Footer
+    navbar,
+    sidebar,
+    footerr
+  },
+  methods: {
+    scrollTop() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    },
   }
+
 }
 </script>
 

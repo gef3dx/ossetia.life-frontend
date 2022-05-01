@@ -30,13 +30,13 @@
                             </div><!-- end widget -->
 
                             
-                            <div class="widget">
+                            <!-- <div class="widget">
                                 <div class="banner-spot clearfix">
                                     <div class="banner-img">
-                                        <img src="upload/banner_07.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
+                                        <img src="/upload/banner_07.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
                             
                             <div class="widget">
                                 <h2 class="widget-title">Trend Videos</h2>
@@ -44,16 +44,16 @@
                                     <div class="blog-box">
                                         <div class="post-media">
                                             <a href="tech-single.html" title="">
-                                                <img src="upload/tech_video_01.jpg" alt="" class="img-fluid">
+                                                <img src="/upload/tech_video_01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect">
                                                     <span class="videohover"></span>
-                                                </div><!-- end hover -->
+                                                </div>
                                             </a>
-                                        </div><!-- end media -->
+                                        </div>
                                         <div class="blog-meta">
                                             <h4><a href="tech-single.html" title="">We prepared the best 10 laptop presentations for you</a></h4>
-                                        </div><!-- end meta -->
-                                    </div><!-- end blog-box -->
+                                        </div>
+                                    </div>
 
                                     <hr class="invis">
 
@@ -63,14 +63,13 @@
                                                 <img src="/upload/tech_video_02.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect">
                                                     <span class="videohover"></span>
-                                                </div><!-- end hover -->
+                                                </div>
                                             </a>
-                                        </div><!-- end media -->
+                                        </div>
                                         <div class="blog-meta">
                                             <h4><a href="tech-single.html" title="">We are guests of ABC Design Studio - Vlog</a></h4>
-                                        </div><!-- end meta -->
-                                    </div><!-- end blog-box -->
-
+                                        </div>
+                                    </div>
                                     <hr class="invis">
 
                                     <div class="blog-box">
@@ -79,15 +78,15 @@
                                                 <img src="/upload/tech_video_03.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect">
                                                     <span class="videohover"></span>
-                                                </div><!-- end hover -->
+                                                </div>
                                             </a>
-                                        </div><!-- end media -->
+                                        </div>
                                         <div class="blog-meta">
                                             <h4><a href="tech-single.html" title="">Both blood pressure monitor and intelligent clock</a></h4>
-                                        </div><!-- end meta -->
-                                    </div><!-- end blog-box -->
-                                </div><!-- end videos -->
-                            </div><!-- end widget -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="widget">
                                 <h2 class="widget-title">Popular Posts</h2>
@@ -117,8 +116,8 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div><!-- end blog-list -->
-                            </div><!-- end widget -->
+                                </div>
+                            </div>
 
                             <div class="widget">
                                 <h2 class="widget-title">Recent Reviews</h2>
@@ -166,8 +165,8 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div><!-- end blog-list -->
-                            </div><!-- end widget -->
+                                </div>
+                            </div>
 
                             <div class="widget">
                                 <h2 class="widget-title">Follow Us</h2>
@@ -201,11 +200,11 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div><!-- end widget -->
+                            </div> -->
 
                            
-                        </div><!-- end sidebar -->
-                    </div><!-- end col -->
+                        </div>
+                    </div>
 </template>
 <script>
 export default {

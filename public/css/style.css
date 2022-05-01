@@ -909,7 +909,8 @@ div.tab button:hover {
 }
 
 .single-post-media img {
-    width: 100%;
+    width: 95%;
+    border-radius: 15px;
 }
 
 .blog-title-area {

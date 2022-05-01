@@ -43,6 +43,9 @@
         float: left;
         width: 50%;
     }
+    .single-post-media img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {

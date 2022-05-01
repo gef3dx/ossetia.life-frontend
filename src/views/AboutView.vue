@@ -14,7 +14,7 @@
                   </div><!-- end col -->
           </div>
           <div class="blog-list clearfix">
-            <Posts/>
+            <posts/>
           </div><!-- end blog-list -->
       </div><!-- end page-wrapper -->
       <hr class="invis">
@@ -23,11 +23,11 @@
 </template>
 
 <script>
-import Posts from '@/components/Posts.vue'
+import posts from '@/components/posts'
 
 export default {
   components: {
-    Posts,
+    posts,
   }
 }
 </script>

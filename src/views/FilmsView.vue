@@ -4,30 +4,31 @@
           <div class="blog-top clearfix">
               <h1 class="pull-left">Фильмы<i class="fa fa-video-camera"></i></h1>
           </div><!-- end blog-top -->
-          <div class="row">
+          <!--<div class="row">
                   <div class="col-lg-10 offset-lg-1">
                       <div class="banner-spot clearfix">
                           <div class="banner-img">
                               <img src="/upload/banner_02.jpg" alt="" class="img-fluid">
-                          </div><!-- end banner-img -->
-                      </div><!-- end banner -->
-                  </div><!-- end col -->
-          </div>
+                          </div>
+                      </div>
+                  </div>
+          </div> 
+          -->
           <div class="blog-list clearfix">
-            <Posts/>
+            <posts url="https://api.ossetia.life/api/v1/category/movies"/>
           </div><!-- end blog-list -->
       </div><!-- end page-wrapper -->
       <hr class="invis">
-      pagination
+
   </div><!-- end col -->
 </template>
 
 <script>
-import Posts from '@/components/Posts.vue'
+import posts from '@/components/posts'
 
 export default {
   components: {
-    Posts,
+    posts,
   }
 }
 </script>
