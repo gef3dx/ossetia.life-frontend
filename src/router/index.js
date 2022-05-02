@@ -29,6 +29,11 @@ const routes = [
     path: '/post/:id',
     name: 'post',
     component: () => import(/* webpackChunkName: "about" */'../views/PostView.vue')
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('@/views/PageNotFaund.vue')
   }
 ]
 

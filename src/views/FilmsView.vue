@@ -29,6 +29,14 @@ import posts from '@/components/posts'
 export default {
   components: {
     posts,
-  }
+  },
+  methods: {
+    scrollTop() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    },
+  },
+  created() {
+    this.scrollTop();
+  },
 }
 </script>

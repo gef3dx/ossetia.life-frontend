@@ -106,18 +106,53 @@
 </template>
 
 <script>
-import loadPosts from "@/mixins/loadPosts";
-import fetchPost from "@/mixins/fetchPosts"
-
+import axios from 'axios'
 export default {
   name: 'Posts',
   data() {
-    return {
-      //url: "https://ossetia.life/api/v1/all",
-    };
+        return {
+          items: [],
+          errors: [],
+          isPostsLoading: false,
+          isMoreLoading: true,
+          page: 1,
+          page_size: 5,
+        }
   },
   props: ['url'],
-  mixins: [loadPosts, fetchPost],
+  methods: {
+        async fetchPost(url) {
+            this.isPostsLoading = true;
+            try {
+                const response = await axios.get(url);
+                this.items = response.data.results;
+            }
+            catch (e) {
+              console.log(e);
+            }
+            finally {
+              this.isPostsLoading = false;
+            }
+        },
+        async loadPosts(url) {
+            this.page += 1;
+            try {
+                const response = await axios.get(url, {
+                  params: {
+                    page: this.page,
+                    page_size: this.page_size
+                  }
+                });
+                this.items = [...this.items, ...response.data.results];
+            }
+            catch (e) {
+              console.log(e);
+            }
+            finally {
+              
+            }
+        },
+  },
   mounted() {
     this.fetchPost(this.url);
     const options = {
